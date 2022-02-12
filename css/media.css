@@ -1,0 +1,114 @@
+@media (max-width: 1080px){
+    form{
+        justify-content: space-evenly;
+        gap: 17px; 
+    }
+    form button{
+        padding: 17px 5px;
+    }
+    .links__elements{
+        justify-content: space-evenly;
+        gap: 27px;
+    }
+}
+@media (max-width: 768px){
+    .nav__elements{
+        background: #A18356;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: -100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .gender{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .process{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .nav__elements a{
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 17px 0;
+    }
+    .hamburger{
+        display: block;
+        width: 40px;
+        height: 20px;
+        background: transparent;
+        position: fixed;
+        top: 32px;
+        left: 16px;
+        z-index: 5;
+    }
+    .hamburger span{
+        width: 40px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        background: #2A2E39;
+        right: 0;
+        transition: 0.5s;
+        box-shadow: 0 3px 3px white;
+    }
+    .hamburger span:nth-child(1){
+        top: 0;
+    }
+    .hamburger span:nth-child(2){
+        top: 9px;
+    }
+    .hamburger span:nth-child(3){
+        bottom: 0;
+    }
+    .hamburger_active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger_active span:nth-child(1){
+        top: 9px;
+        transform: rotate(45deg);
+    }
+    .hamburger_active span:nth-child(3){
+        bottom: 9px;
+        transform: rotate(-45deg);
+    }
+    .nav__elements_active{
+        right: 0;
+    }
+    .header__elements{
+        flex-direction: column;
+        gap: 40px;
+        padding: 53px 0 32px 0;
+    }
+    .header__text{
+        width: 100%;
+    }
+    .model .model__text{
+        max-width: 100%;
+    }
+    .model p{
+        max-width: 100%;
+    }
+    .header__photo{
+        width: 100%;
+    }
+    form input, form button{
+        width: 70%;
+    }
+}
+@media (max-width: 425px){
+    form input, form button{
+        width: 100%;
+    }
+    .links__item{
+        text-align: center;
+    }
+}
